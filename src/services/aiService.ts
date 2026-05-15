@@ -1,5 +1,5 @@
-const API_KEY = 'sk-55cc2af36e0141da804dc3afcfba350d';
-const API_URL = '/api/dashscope/compatible-mode/v1/chat/completions';
+const API_KEY = import.meta.env.VITE_DASHSCOPE_API_KEY || 'sk-55cc2af36e0141da804dc3afcfba350d';
+const API_URL = import.meta.env.VITE_DASHSCOPE_API_URL || '/api/dashscope/compatible-mode/v1/chat/completions';
 
 export interface CopyStyle {
   name: string;

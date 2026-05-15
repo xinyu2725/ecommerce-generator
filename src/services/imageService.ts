@@ -1,6 +1,6 @@
-const VOLC_API_KEY = 'ark-789741ec-82cb-4ec6-99d6-970cb896a116-76934';
-const VOLC_API_URL = '/api/volcengine/api/v3/images/generations';
-const MODEL_ID = 'doubao-seedream-4-5-251128';
+const VOLC_API_KEY = import.meta.env.VITE_VOLC_API_KEY || 'ark-789741ec-82cb-4ec6-99d6-970cb896a116-76934';
+const VOLC_API_URL = import.meta.env.VITE_VOLC_API_URL || '/api/volcengine/api/v3/images/generations';
+const MODEL_ID = import.meta.env.VITE_VOLC_MODEL_ID || 'doubao-seedream-4-5-251128';
 
 export interface ImageStyle {
   name: string;
